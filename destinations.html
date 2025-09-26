@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Travel Blog</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        
+        .page-title {
+            text-align: center;
+            margin: 2rem 0;
+            color: #1a2a6c;
+            font-size: 2.5rem;
+        }
+        
+        .destination-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 3rem;
+            transition: transform 0.3s;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .destination-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .destination-content {
+            padding: 2rem;
+        }
+        
+        .destination-content h3 {
+            font-size: 1.8rem;
+            color: #1a2a6c;
+            margin-bottom: 1rem;
+        }
+        
+        .highlights-list {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+        
+        .highlights-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        
+        .highlights-list li:before {
+            content: "✓";
+            color: #fdbb2d;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .student-tip {
+            background: #e8f4f8;
+            border-left: 4px solid #1a2a6c;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        footer {
+            background: #1a2a6c;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                display: none;
+            }
+            
+            .destination-img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Wanderlust Diaries</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Destinations Page Content -->
+    <div class="container">
+        <h1 class="page-title">My Travel Destinations</h1>
+        
+        <!-- Destination 1 -->
+        <div class="destination-card" id="ella">
+            <img src="ella.JFIF" alt="Ella, Sri Lanka" class="destination-img">
+            <div class="destination-content">
+                <h3>Ella, Sri Lanka</h3>
+                <p>Ella is a small town in the Badulla District of Sri Lanka, surrounded by hills covered with cloud forests and tea plantations. It's a perfect destination for students looking for an affordable yet breathtaking travel experience close to nature.</p>
+                
+                <h4>Highlights & Activities:</h4>
+                <ul class="highlights-list">
+                    <li>Hike to the top of Little Adam's Peak for stunning views</li>
+                    <li>Walk across the famous Nine Arch Bridge</li>
+                    <li>Visit Ravana Falls and take a refreshing dip</li>
+                    <li>Explore tea plantations and learn about tea production</li>
+                    <li>Enjoy budget-friendly local cuisine</li>
+                    <li>Watch sunrise from Ella Rock</li>
+                </ul>
+                
+                <div class="student-tip">
+                    <strong>Student Tip:</strong> Travel by train from Colombo to Ella for one of the most scenic railway journeys in the world at a student-discounted fare.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Destination 2 -->
+        <div class="destination-card" id="kandy">
+            <img src="kandy.jpg" alt="Kandy, Sri Lanka" class="destination-img">
+            <div class="destination-content">
+                <h3>Kandy, Sri Lanka</h3>
+                <p>Kandy is a major city in central Sri Lanka, known for its rich history, cultural significance, and beautiful landscapes. It's home to the Temple of the Sacred Tooth Relic, a UNESCO World Heritage Site, making it a perfect educational destination for students.</p>
+                
+                <h4>Highlights & Activities:</h4>
+                <ul class="highlights-list">
+                    <li>Visit the Temple of the Sacred Tooth Relic</li>
+                    <li>Explore the Royal Botanical Gardens in Peradeniya</li>
+                    <li>Watch traditional Kandyan dance performances</li>
+                    <li>Walk around Kandy Lake in the evening</li>
+                    <li>Visit the Ceylon Tea Museum</li>
+                    <li>Explore Udawatta Kele Sanctuary</li>
+                </ul>
+                
+                <div class="student-tip">
+                    <strong>Student Tip:</strong> Many cultural sites offer discounted entry fees for students with valid university ID cards.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Destination 3 -->
+        <div class="destination-card" id="galle">
+            <img src="galle.jpg" alt="Galle, Sri Lanka" class="destination-img">
+            <div class="destination-content">
+                <h3>Galle, Sri Lanka</h3>
+                <p>Galle is a city on the southwest coast of Sri Lanka, known for its fortified old city founded by Portuguese colonists in the 16th century. The Galle Fort is a UNESCO World Heritage Site and offers a unique blend of European architecture and South Asian traditions.</p>
+                
+                <h4>Highlights & Activities:</h4>
+                <ul class="highlights-list">
+                    <li>Explore the historic Galle Fort</li>
+                    <li>Visit the Galle Lighthouse and Maritime Museum</li>
+                    <li>Relax on Unawatuna Beach</li>
+                    <li>Shop for souvenirs at the Galle Fort shopping streets</li>
+                    <li>Watch sunset from the fort walls</li>
+                    <li>Try fresh seafood at beachside restaurants</li>
+                </ul>
+                
+                <div class="student-tip">
+                    <strong>Student Tip:</strong> Visit during the off-peak season (May-November) for better deals on accommodation and fewer crowds.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Wanderlust Diaries. All rights reserved.</p>
+            <p>Created by Aruni Dinushika | University of Kelaniya</p>
+        </div>
+    </footer>
+</body>
+</html>

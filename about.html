@@ -1,7 +1,279 @@
-<html>
-    <p>
-        hello
-        </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Aruni Dinushika</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         
-    
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        
+        .page-title {
+            text-align: center;
+            margin: 2rem 0;
+            color: #1a2a6c;
+            font-size: 2.5rem;
+        }
+        
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fdbb2d;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .interests-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .interest-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .interest-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1a2a6c;
+        }
+        
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+        
+        .contact-info h3 {
+            color: #1a2a6c;
+            margin-bottom: 1rem;
+        }
+        
+        .destination-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+        
+        .destination-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .destination-content {
+            padding: 2rem;
+        }
+        
+        .destination-content h3 {
+            font-size: 1.8rem;
+            color: #1a2a6c;
+            margin-bottom: 1rem;
+        }
+        
+        .highlights-list {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+        
+        .highlights-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: #1a2a6c;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .student-badge {
+            background: #fdbb2d;
+            color: #333;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                display: none;
+            }
+            
+            .profile-section {
+                text-align: center;
+            }
+            
+            .interests-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Wanderlust Diaries</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Me Page Content -->
+    <div class="container">
+        <h1 class="page-title">About Me</h1>
+        
+        <div class="profile-section">
+            <img src="profile photo.jpg" alt="Profile Photo" class="profile-img">
+            <h2>Aruni Dinushika</h2>
+            <div class="student-badge">University Student</div>
+            <p>Passionate Traveler & Adventure Seeker</p>
+        </div>
+        
+        <div class="about-content">
+            <h2>My Travel Story</h2>
+            <p>Hello! I'm Aruni Dinushika, a university student with a passion for exploring new places while balancing my academic life. My journey into travel began when I started taking short trips during semester breaks to destress and experience different cultures.</p>
+            
+            <p>As a student, I've learned to travel on a budget while still having meaningful experiences. I believe that travel is one of the best forms of education - it teaches you about history, culture, and most importantly, about yourself. My goal is to visit at least one new place every semester break.</p>
+            
+            <p>Through this blog, I want to share my experiences as a student traveler - showing that you don't need a big budget to explore the world. I focus on affordable travel options, student discounts, and meaningful experiences that enrich both my personal growth and academic perspective.</p>
+        </div>
+        
+        <div class="about-content">
+            <h2>My Travel Interests</h2>
+            <div class="interests-list">
+                <div class="interest-item">
+                    <div class="interest-icon">🏞️</div>
+                    <h3>Budget Travel</h3>
+                    <p>Finding affordable ways to explore new destinations without compromising on experiences.</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">🏛️</div>
+                    <h3>Cultural Immersion</h3>
+                    <p>Learning about local traditions and history to complement my university studies.</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">📸</div>
+                    <h3>Travel Photography</h3>
+                    <p>Documenting my journeys to share with fellow students and travel enthusiasts.</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">🌍</div>
+                    <h3>Student Travel</h3>
+                    <p>Exploring travel opportunities specifically available to university students.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: aruni.dinushika@example.com</p>
+            <p>Phone: +94 77 123 4567</p>
+            <p>University: University of Kelaniya</p>
+            <p>Follow me on social media: @AruniTravels</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Wanderlust Diaries. All rights reserved.</p>
+            <p>Created by Aruni Dinushika | University Student</p>
+        </div>
+    </footer>
+</body>
 </html>
